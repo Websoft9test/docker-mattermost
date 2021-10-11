@@ -1,6 +1,7 @@
-## About
+## Mattermost
 
-This repository is forked from ONLYOFFICE/Docker-CommunityServer, we have the following modifications are provided
+Mattermost 分为团队版和企业版，其中团队版即开源版
 
-* replace README.md
-* add README-zh.md, CHANGELOG.md, Note.md, License.md, docker-compose.yml,.env, src, .github folder
+### 注意
+
+* 容器默认为 PostgreSQL 数据库，使用MySQL数据库需要非常完整的数据库连接
