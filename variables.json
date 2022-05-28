@@ -1,36 +1,16 @@
 {
   "name": "mattermost",
   "trademark": "Mattermost",
-  "installpath": "/data/wwwroot/mattermost",
+  "installpath": "/data/apps/mattermost",
   "compose_file": "docker-compose.yml",
-  "fork_url": "https://github.com/mattermost/mattermost-docker",
+  "fork_url": "https://github.com/mattermost/docker",
   "env_file": ".env",
   "requirements":{
-    "cpu_arch": "Linux x86-64, ARM 32/64, IBM POWER8, x86/i686",
+    "cpu_arch": "Linux x86-64, ARM 32/64, x86/i686",
     "cpu": "1",
     "memory": "2",
     "disk": "20",
     "swap": "2",
-    "url": "https://github.com/mattermost/mattermost-docker"
-  },
-
-  "services":[
-    {
-      "name": "mattermost-server",
-      "port": "9001",
-      "description_cn": "浏览器访问 mattermost",
-      "description_en": "Browser access to mattermost Document by http",
-      "required": "Y"
-    }
-  ],
-
-  "faqs": [
-    {
-      "question_cn": "Mattermost 容器环境变量中的 MM_SQLSETTINGS_DATASOURCE 是必要的吗？",
-      "answer_cn": "是的，否则容器无法连接 MySQL",
-      "question_en": "Is the item MM_SQLSETTINGS_DATASOURCE need for Mattermost container?",
-      "answer_en": "Yes, otherwise Mattermost can't connect MySQL"
-    }
-  ]
-
+    "url": "https://docs.mattermost.com/install/install-docker.html"
+  }
 }
